@@ -6,5 +6,5 @@ adminer:
 	docker run --rm -ti -p 8080:8080 adminer
 
 migrate:
-	migrate -source file://migrations \
-	-database postgres://postgres:secret@localhost:5432/postgres?sslmode=disable up
+	migrate -source file://migrations/ \
+	-database postgres://app_user:secretpassword@localhost:5432/app_db?sslmode=disable up
